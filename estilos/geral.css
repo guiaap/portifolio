@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.container {
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+}
+
+a.whatsappButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;  
+
+    overflow-y: hidden;
+}
+
+a.whatsappButton > img {
+    width: 100%;
+    height: auto;
+}
+

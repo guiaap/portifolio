@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+section#home {
+    height: 550px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    background-color: #313133;
+
+    background-image: url(../imagens/codigo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#home > div.homeTextContainer {
+    width: 900px;
+    margin-left: 100px;
+
+    color: white;
+}
+
+section#home > div.homeTextContainer > h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+section#home > div.homeTextContainer > p {
+    font-size: 1.1em;
+    text-align: justify;
+}
