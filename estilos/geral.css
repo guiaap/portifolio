@@ -8,6 +8,8 @@
     overflow-x: hidden;
 
     font-family: 'Montserrat', sans-serif;
+
+    scroll-behavior: smooth;
 }
 
 div.container {
