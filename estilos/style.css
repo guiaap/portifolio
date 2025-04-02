@@ -169,9 +169,9 @@ section#sobre > div.sobreTextContainer {
     justify-content: center;
 
     border: 1px solid #313133;
-    border-radius: 20px;
+    border-radius: 10px;
 
-    box-shadow: 20px 20px #4D4956;
+    box-shadow: 10px 10px #4D4956;
 
     transition: 0.3s;
 }
@@ -261,6 +261,11 @@ section#portifolio > div.cardContainer > a > div.card {
     width: 100%;
 
     background-color: #FFF;
+}
+
+section#portifolio > div.cardContainer > a > div.card > img {
+    height: 100%;
+    width: 100%;
 }
 
 section#servicos {
@@ -585,13 +590,13 @@ footer > div.socialMediaContainer > a > div.Linkedin {
 
     section#servicos > div.servContainer > div.servItem  {
         height: 330px;
-        width: 90%;
+        width: 300px;
     }
 
     section#servicos > div.servContainer > div.servItemCenter {
         height: 330px;
-        width: 90%;
-        margin: 10px 0px
+        width: 300px;
+        margin: 10px 0px;
     }
 
     section#servicos > div.servContainer > div.servItem > p.preco {
@@ -608,7 +613,7 @@ footer > div.socialMediaContainer > a > div.Linkedin {
 
     footer > a {
         height: 60px;
-        width: 90%;
+        width: 300px;
         padding: 0;
 
         display: flex;
