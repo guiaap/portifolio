@@ -4,32 +4,45 @@ section#sobre {
     width: 100%;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     background-color: #EAE1E9;
 }
 
-section#sobre > h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
+section#sobre > div.sobreTextContainer {
+    width: 700px;
+    margin: 50px 0px 70px 0px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #313133;
+    border-radius: 20px;
+
+    box-shadow: 20px 20px #4D4956;
+
+    transition: 0.3s;
+}
+
+section#sobre > div.sobreTextContainer:hover {
+    transform: translateY(-5px);
+}
+
+section#sobre > div.sobreTextContainer > h2 {
+    margin-bottom: 5px;
     font-size: 2em;
 }
 
-section#sobre > hr {
-    width: 70px;
+section#sobre > div.sobreTextContainer > hr {
     height: 4px;
-
+    width: 70px;
+    margin-bottom: 30px;
     border: none;
-
     background-color: #616C83;
-}
-
-section#sobre > div.sobreTextContainer {
-    width: 700px;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 section#sobre > div.sobreTextContainer > p {
@@ -37,6 +50,5 @@ section#sobre > div.sobreTextContainer > p {
 
     text-align: justify;
     font-size: 1.1em
-    
 }
 

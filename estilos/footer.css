@@ -13,7 +13,7 @@ footer {
 
 footer > h2 {
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 2em;
 
     color: #FFF;    
@@ -22,14 +22,12 @@ footer > h2 {
 footer > hr {
     width: 70px;
     height: 4px;
-
     border: none;
-
     background-color: #FFF;
 }
 
 footer > a {
-    margin-top: 20px;
+    margin: 20px 0px;
     padding: 20px;
     border-radius: 20px;
     background-color: #0e750a;
@@ -44,10 +42,6 @@ footer > a:hover {
 
     background-color: #FFF;
     border: 1px solid #0e750a;
-}
-
-footer > ul {
-    margin-top: 20px;
 }
 
 footer > ul > li {
@@ -70,12 +64,11 @@ footer > ul > li > a > span {
 
 footer > h3 {
     color: #FFF;
-    margin-top: 20px;
+    margin: 20px 0px 10px 0px;
 }
 
 footer > div.socialMediaContainer {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     display: flex;
     align-items: center;
@@ -83,8 +76,8 @@ footer > div.socialMediaContainer {
 }
 
 footer > div.socialMediaContainer > a > div.Instagram {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 
     background-image: url(../imagens/instagram.png);
     background-size: cover;
@@ -93,8 +86,8 @@ footer > div.socialMediaContainer > a > div.Instagram {
 }
 
 footer > div.socialMediaContainer > a > div.Facebook {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 
     margin: 0px 10px;
 
@@ -105,8 +98,8 @@ footer > div.socialMediaContainer > a > div.Facebook {
 }
 
 footer > div.socialMediaContainer > a > div.Linkedin {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 
     background-image: url(../imagens/linkedin.png);
     background-size: cover;
