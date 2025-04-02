@@ -1,0 +1,633 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+div.container {
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+}
+
+a.whatsappButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;  
+
+    overflow-y: hidden;
+}
+
+a.whatsappButton > img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    height: 80px;
+    max-width: inherit;
+    width: 100%;
+    margin: auto;
+
+    position: fixed;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #313133ce;
+}
+
+header > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > a > div.headerLogoContainer {
+    height: 100%;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > a > div.headerLogoContainer > img {
+    height: 60px;
+}
+
+header > a > div.headerLogoContainer > p {
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+header > nav {
+    height: 100%;
+    width: 700px;
+}
+
+header > nav > ul {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header > nav > ul > li {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > nav > ul > li > a {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+
+header > nav > ul > li > a:hover {
+    color: #a5b7dd;
+    border-bottom: 3px solid #a5b7dd;
+}
+
+section#home {
+    height: 600px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    background-color: #313133;
+
+    background-image: url(../imagens/codigo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#home > div.homeTextContainer {
+    width: 900px;
+    margin-left: 100px;
+
+    color: white;
+}
+
+section#home > div.homeTextContainer > h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+section#home > div.homeTextContainer > p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+section#sobre {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #EAE1E9;
+}
+
+section#sobre > div.sobreTextContainer {
+    width: 700px;
+    margin: 50px 0px 70px 0px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #313133;
+    border-radius: 20px;
+
+    box-shadow: 20px 20px #4D4956;
+
+    transition: 0.3s;
+}
+
+section#sobre > div.sobreTextContainer:hover {
+    transform: translateY(-5px);
+}
+
+section#sobre > div.sobreTextContainer > h2 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+section#sobre > div.sobreTextContainer > hr {
+    height: 4px;
+    width: 70px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #616C83;
+}
+
+section#sobre > div.sobreTextContainer > p {
+    margin-bottom: 20px;
+
+    text-align: justify;
+    font-size: 1.1em
+}
+
+section#portifolio {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #313133;
+}
+
+section#portifolio > h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 2em;
+    color: #FFF;
+}
+
+section#portifolio > hr {
+    width: 70px;
+    height: 4px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #FFF;
+}
+
+section#portifolio > div.cardContainer {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#portifolio > div.cardContainer > a {
+    height: 100px;
+    width: 90%;
+    margin-bottom: 10px;
+
+    border: 3px solid #4D4956;
+    border-radius: 20px;
+
+    box-shadow: 1px 2px 3px #ffffff94;
+
+    transition: 0.3s;
+}
+
+section#portifolio > div.cardContainer > a:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 2px 3px 4px #ffffffbe;
+}
+
+section#portifolio > div.cardContainer > a > div.card {
+    height: 100%;
+    width: 100%;
+
+    background-color: #FFF;
+}
+
+section#servicos {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #EAE1E9;
+}
+
+section#servicos > h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+section#servicos > hr {
+    height: 4px;
+    width: 70px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #4D4956;
+}
+
+section#servicos > div.servContainer {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section#servicos > div.servContainer > div.servItem {
+    height: 380px;
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #4D4956;
+    border-radius: 30px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
+
+    transition: 0.8s;
+}
+
+section#servicos > div.servContainer > div.servItemCenter {
+    height: 380px;
+    width: 320px;
+    margin: 0px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #4D4956;
+    border-radius: 30px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
+    
+    transition: 0.3s;
+}
+
+section#servicos > div.servContainer > div.servItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.541);
+}
+
+section#servicos > div.servContainer > div.servItemCenter:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.541);
+}
+
+section#servicos > div.servContainer > div.servItem > img {
+    height: 70px;
+}
+
+section#servicos > div.servContainer > div.servItemCenter > img {
+    height: 70px;
+}
+
+section#servicos > div.servContainer > div.servItem > h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section#servicos > div.servContainer > div.servItemCenter > h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section#servicos > div.servContainer > div.servItem > p {
+    width: 90%;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+section#servicos > div.servContainer > div.servItemCenter > p {
+    width: 90%;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+section#servicos > div.servContainer > div.servItem > p.preco {
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+section#servicos > div.servContainer > div.servItemCenter > p.preco {
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #313133;
+}
+
+footer > h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 2em;
+
+    color: #FFF;    
+}
+
+footer > hr {
+    width: 70px;
+    height: 4px;
+    border: none;
+    background-color: #FFF;
+}
+
+footer > a {
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #0e750a;
+    color: #FFF;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+footer > a:hover {
+    color: #0e750a;
+
+    background-color: #FFF;
+    border: 1px solid #0e750a;
+}
+
+footer > ul > li {
+    overflow-y: hidden;
+}
+
+footer > ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer > ul > li > a > span {
+    overflow-y: hidden;
+    margin-right: 5px;
+}
+
+footer > h3 {
+    color: #FFF;
+    margin: 20px 0px 10px 0px;
+}
+
+footer > div.socialMediaContainer {
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div.socialMediaContainer > a > div.Instagram {
+    height: 30px;
+    width: 30px;
+
+    background-image: url(../imagens/instagram.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer > div.socialMediaContainer > a > div.Facebook {
+    height: 30px;
+    width: 30px;
+
+    margin: 0px 10px;
+
+    background-image: url(../imagens/facebook.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer > div.socialMediaContainer > a > div.Linkedin {
+    height: 30px;
+    width: 30px;
+
+    background-image: url(../imagens/linkedin.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+
+    header {
+        height: 60px;
+    }
+
+    header > a > div.headerLogoContainer > img {
+        height: 50px;
+    }
+
+    header > a > div.headerLogoContainer > p {
+        font-size: 1.2em;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    section#home {
+        height: 420px;
+        justify-content: center;
+    }
+
+    section#home > div.homeTextContainer {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    section#home > div.homeTextContainer > h1 {
+        font-size: 1.5em;
+    }
+
+    section#home > div.homeTextContainer > p {
+        font-size: 0.9em;
+    }
+
+    section#sobre > div.sobreTextContainer {
+        width: 90%;
+        margin: 30px 0px 40px 0px;
+        padding: 20px 10px;
+        box-shadow: 10px 10px #4D4956;
+    }
+
+    section#sobre > div.sobreTextContainer > h2 {
+        font-size: 1.5em;
+    }
+
+    section#sobre > div.sobreTextContainer > hr {
+        margin-bottom: 0;
+    }
+
+    section#sobre > div.sobreTextContainer > p {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 0.9em;
+    }
+
+    section#portifolio > h2 {
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+
+    section#portifolio > hr {
+        margin-bottom: 20px;
+    }
+
+    section#portifolio > div.cardContainer {
+        margin-bottom: 30px;
+    }
+
+    section#portifolio > div.cardContainer > a {
+        height: 70px;
+    }
+
+    section#servicos > h2 {
+        margin-top: 30px;
+        font-size: 1.5em;        
+    }
+
+    section#servicos > hr {
+        margin-bottom: 20px;
+    }
+
+    section#servicos > div.servContainer {
+        margin-bottom: 30px;
+    }
+
+    section#servicos > div.servContainer > div.servItem  {
+        height: 330px;
+        width: 90%;
+    }
+
+    section#servicos > div.servContainer > div.servItemCenter {
+        height: 330px;
+        width: 90%;
+        margin: 10px 0px
+    }
+
+    section#servicos > div.servContainer > div.servItem > p.preco {
+        margin-top: 10px;
+    }
+
+    section#servicos > div.servContainer > div.servItemCenter > p.preco {
+        margin-top: 10px;
+    }
+
+    footer > h2 {
+        font-size: 1.5em;
+    }
+
+    footer > a {
+        height: 60px;
+        width: 90%;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    footer > ul {
+        max-width: 90%;
+    }
+
+    footer > ul > li > a {
+        font-size: 0.7em;
+    }
+
+    a.whatsappButton {
+        display: none;
+    }
+
+}
