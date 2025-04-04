@@ -136,38 +136,6 @@ section#sobre {
     align-items: center;
     justify-content: center;
     background-color: #EAE1E9;
-
-    position: relative;
-}
-
-section#sobre > div.sobreImageContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-
-   position: absolute;
-   left: 360px;
-   z-index: 50;
-}
-
-section#sobre > div.sobreImageContainer > img {
-    height: 90px;
-
-    transition: 0.3s;
-}
-
-section#sobre > div.sobreImageContainer > img:hover {
-    transform: translateY(-5px);
-}
-
-section#sobre > div.sobreImageContainer > img#CSS {
-    height: 100px;
-}
-
-section#sobre > div.sobreImageContainer > img#JS {
-    height: 70px;
 }
 
 section#sobre > div.sobreTextContainer {
@@ -179,6 +147,8 @@ section#sobre > div.sobreTextContainer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
 
     border: 1px solid #31313398;
     border-radius: 20px;
@@ -210,6 +180,36 @@ section#sobre > div.sobreTextContainer > p {
 
     text-align: justify;
     font-size: 1.1em
+}
+
+section#sobre > div.sobreTextContainer > div.sobreImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+   position: absolute;
+   left: -50px;
+   z-index: 50;
+}
+
+section#sobre > div.sobreTextContainer > div.sobreImageContainer > img {
+    height: 90px;
+
+    transition: 0.3s;
+}
+
+section#sobre > div.sobreTextContainer > div.sobreImageContainer > img:hover {
+    transform: translateY(-5px);
+}
+
+section#sobre > div.sobreTextContainer > div.sobreImageContainer > img#CSS {
+    height: 100px;
+}
+
+section#sobre > div.sobreTextContainer > div.sobreImageContainer > img#JS {
+    height: 70px;
 }
 
 section#portifolio {
@@ -245,6 +245,7 @@ section#portifolio > div.cardContainer {
     padding-top: 5px;
     
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
