@@ -532,7 +532,7 @@ a.whatsappButton > img {
     height: auto;
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (min-width: 300px) and (max-width: 599px) {
 
     header {
         height: 60px;
