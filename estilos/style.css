@@ -5,49 +5,26 @@
     padding: 0;
 
     box-sizing: border-box;
-    overflow-x: hidden;
 
     font-family: 'Montserrat', sans-serif;
+}
 
+html, body {
     scroll-behavior: smooth;
-}
-
-div.container {
-    max-width: 1800px;
-    width: 100%;
-    margin: auto;
-}
-
-a.whatsappButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;  
-
-    overflow-y: hidden;
-}
-
-a.whatsappButton > img {
-    width: 100%;
-    height: auto;
 }
 
 header {
     height: 80px;
-    max-width: inherit;
-    width: 100%;
-    margin: auto;
 
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: #313133ce;
+    background-color: #171718ce;
 }
 
 header > a {
@@ -118,22 +95,26 @@ section#home {
     height: 600px;
     width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    position: relative;
 
     background-color: #313133;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.326);
 
     background-image: url(../imagens/codigo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
 }
 
 section#home > div.homeTextContainer {
     width: 900px;
-    margin-left: 100px;
+
+    position: absolute;
+    top: 200px;
+    left: 100px;
 
     color: white;
 }
@@ -154,24 +135,55 @@ section#sobre {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #EAE1E9;
+
+    position: relative;
+}
+
+section#sobre > div.sobreImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+   position: absolute;
+   left: 360px;
+   z-index: 50;
+}
+
+section#sobre > div.sobreImageContainer > img {
+    height: 90px;
+
+    transition: 0.3s;
+}
+
+section#sobre > div.sobreImageContainer > img:hover {
+    transform: translateY(-5px);
+}
+
+section#sobre > div.sobreImageContainer > img#CSS {
+    height: 100px;
+}
+
+section#sobre > div.sobreImageContainer > img#JS {
+    height: 70px;
 }
 
 section#sobre > div.sobreTextContainer {
     width: 700px;
     margin: 50px 0px 70px 0px;
-    padding: 20px;
+    padding: 20px 70px 20px 70px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #313133;
-    border-radius: 10px;
+    border: 1px solid #31313398;
+    border-radius: 20px;
 
-    box-shadow: 10px 10px #4D4956;
+    box-shadow: 20px 20px #4d4956c3;
 
     transition: 0.3s;
 }
@@ -209,6 +221,7 @@ section#portifolio {
     justify-content: center;
 
     background-color: #313133;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.326);
 }
 
 section#portifolio > h2 {
@@ -232,40 +245,88 @@ section#portifolio > div.cardContainer {
     padding-top: 5px;
     
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
-section#portifolio > div.cardContainer > a {
-    height: 100px;
-    width: 90%;
-    margin-bottom: 10px;
+section#portifolio > div.cardContainer > div.card {
+    height: 380px;
+    width: 300px;
 
-    border: 3px solid #4D4956;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 10px;
 
     box-shadow: 1px 2px 3px #ffffff94;
+    border: 1px solid #FFF;
+
+}
+
+section#portifolio > div.cardContainer > div.card > div.cardIMG {
+    height: 210px;
+    width: 100%;
+    position: relative;
+}
+
+section#portifolio > div.cardContainer > div.card > div.cardIMG > img {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #FFF;
+    object-fit: cover;
+}
+
+section#portifolio > div.cardContainer > div.card > div.cardIMG > a {
+    opacity: 0;
+
+    position: absolute;
+
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    text-decoration: none;
+    background-color: #3131336a;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
 
     transition: 0.3s;
 }
 
-section#portifolio > div.cardContainer > a:hover {
-    transform: translateY(-5px);
-
-    box-shadow: 2px 3px 4px #ffffffbe;
+section#portifolio > div.cardContainer > div.card > div.cardIMG > a:hover {
+    opacity: 1;
 }
 
-section#portifolio > div.cardContainer > a > div.card {
-    height: 100%;
-    width: 100%;
+section#portifolio > div.cardContainer > div.card > h3 {
+    color: #FFF;
+    text-align: center;
+}
 
+section#portifolio > div.cardContainer > div.card > p {
+    height: 80px;
+    color: #FFF;
+    font-size: 14px;
+    text-align: justify;
+}
+
+section#portifolio > div.cardContainer > div.card > div {
+    height: 4px;
+    width: 100%;
     background-color: #FFF;
-}
-
-section#portifolio > div.cardContainer > a > div.card > img {
-    height: 100%;
-    width: 100%;
 }
 
 section#servicos {
@@ -302,11 +363,12 @@ section#servicos > div.servContainer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 15px;
 }
 
 section#servicos > div.servContainer > div.servItem {
-    height: 380px;
-    width: 320px;
+    height: 400px;
+    width: 340px;
 
     display: flex;
     flex-direction: column;
@@ -314,26 +376,8 @@ section#servicos > div.servContainer > div.servItem {
     justify-content: center;
 
     border: 2px solid #4D4956;
-    border-radius: 30px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
 
-    transition: 0.8s;
-}
-
-section#servicos > div.servContainer > div.servItemCenter {
-    height: 380px;
-    width: 320px;
-    margin: 0px 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid #4D4956;
-    border-radius: 30px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
-    
     transition: 0.3s;
 }
 
@@ -342,16 +386,8 @@ section#servicos > div.servContainer > div.servItem:hover {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.541);
 }
 
-section#servicos > div.servContainer > div.servItemCenter:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.541);
-}
 
 section#servicos > div.servContainer > div.servItem > img {
-    height: 70px;
-}
-
-section#servicos > div.servContainer > div.servItemCenter > img {
     height: 70px;
 }
 
@@ -360,20 +396,9 @@ section#servicos > div.servContainer > div.servItem > h3 {
     margin-bottom: 10px;
 }
 
-section#servicos > div.servContainer > div.servItemCenter > h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
 section#servicos > div.servContainer > div.servItem > p {
     width: 90%;
-    font-size: 0.9em;
-    text-align: justify;
-}
-
-section#servicos > div.servContainer > div.servItemCenter > p {
-    width: 90%;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: justify;
 }
 
@@ -382,15 +407,7 @@ section#servicos > div.servContainer > div.servItem > p.preco {
     margin-top: 20px;
     text-align: center;
     font-weight: 700;
-    font-size: 1em;
-}
-
-section#servicos > div.servContainer > div.servItemCenter > p.preco {
-    width: 90%;
-    margin-top: 20px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 footer {
@@ -498,6 +515,22 @@ footer > div.socialMediaContainer > a > div.Linkedin {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+a.whatsappButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;  
+
+    overflow-y: hidden;
+}
+
+a.whatsappButton > img {
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
