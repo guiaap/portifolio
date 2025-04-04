@@ -105,8 +105,6 @@ section#home {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
 }
 
 section#home > div.homeTextContainer {
@@ -189,9 +187,9 @@ section#sobre > div.sobreTextContainer > div.sobreImageContainer {
     justify-content: center;
     gap: 30px;
 
-   position: absolute;
-   left: -50px;
-   z-index: 50;
+    position: absolute;
+    left: -36px;
+    z-index: 50;
 }
 
 section#sobre > div.sobreTextContainer > div.sobreImageContainer > img {
@@ -553,14 +551,18 @@ a.whatsappButton > img {
     }
 
     section#home {
-        height: 420px;
+        height: 390px;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
     section#home > div.homeTextContainer {
+        position: static;
         width: 90%;
-        margin-top: 20px;
-        margin-left: 0;
+        margin-bottom: 50px;
+
     }
 
     section#home > div.homeTextContainer > h1 {
@@ -573,8 +575,8 @@ a.whatsappButton > img {
 
     section#sobre > div.sobreTextContainer {
         width: 90%;
-        margin: 30px 0px 40px 0px;
-        padding: 20px 10px;
+        margin: 30px 0px 70px 0px;
+        padding: 20px 10px 60px 10px;
         box-shadow: 10px 10px #4D4956;
     }
 
@@ -590,6 +592,29 @@ a.whatsappButton > img {
         margin-top: 20px;
         margin-bottom: 0px;
         font-size: 0.9em;
+    }
+
+    section#sobre > div.sobreTextContainer > div.sobreImageContainer {
+        flex-direction: row;
+        gap: 20px;
+        left: 0;
+        right: 0;
+        bottom: -35px;
+    }
+
+    section#sobre > div.sobreTextContainer > div.sobreImageContainer > img {
+        height: 70px;
+    
+        transition: 0.3s;
+    }
+
+    section#sobre > div.sobreTextContainer > div.sobreImageContainer > img#CSS {
+        height: 70px;
+    }
+
+    section#sobre > div.sobreTextContainer > div.sobreImageContainer > img#JS {
+        height: 50px;
+        margin-top: 10px;
     }
 
     section#portifolio > h2 {
@@ -631,6 +656,10 @@ a.whatsappButton > img {
         height: 330px;
         width: 300px;
         margin: 10px 0px;
+    }
+
+    section#servicos > div.servContainer > div.servItem > p {
+        font-size: 14px;
     }
 
     section#servicos > div.servContainer > div.servItem > p.preco {
