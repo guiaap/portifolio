@@ -229,6 +229,10 @@ header {
     left: 480px;
 }
 
+.mobile-astrocat {
+    display: none;
+}
+
 #portifolio {
     width: 100%;
 
@@ -805,10 +809,15 @@ footer {
         font-size: 1em;
     }
 
+    #sobre {
+        flex-direction: column;
+        
+    }
+
     .sobre-text-container {
         width: 90%;
         margin-top: 40px;
-        margin-bottom: 110px;
+        margin-bottom: 120px;
         padding: 10px 20px;
         border-radius: 10px;
     }
@@ -822,11 +831,7 @@ footer {
     }
 
     .astrocat {
-        height: 350px;
-        width: 350px;
-        top: 460px;
-        right: auto;
-        left: 0;
+        display: none;
     }
 
     .planet {
@@ -841,6 +846,23 @@ footer {
     .tech-container {
         display: none;
     }
+
+    #portifolio {
+        position: relative;
+    }
+
+    .mobile-astrocat {
+        display: block;
+
+        position: absolute;
+        top: -200px;
+
+        z-index: 1;
+
+        height: 350px;
+        width: 350px;
+    }
+
 
     #portifolio h2 {
         margin-top: 80px;
