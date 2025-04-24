@@ -519,9 +519,8 @@ header {
     height: 60px;
     width: 280px;
     
-
     position: absolute;
-    top: 230px;
+    top: 270px;
     z-index: 50;
 
     display: flex;
