@@ -35,11 +35,6 @@ header {
     background-color: #003c66ea;
 }
 
-header > a {
-    text-decoration: none;
-    color: #F2F2F2;
-}
-
 .logo-container {
     height: 100%;
     width: 300px;
@@ -709,168 +704,67 @@ footer {
 @media (min-width: 300px) and (max-width: 599px) {
 
     header {
-        height: 60px;
-        /*teste*/
-    }
-
-    header > a > div.headerLogoContainer > img {
-        height: 50px;
-    }
-
-    header > a > div.headerLogoContainer > p {
-        font-size: 1.2em;
-    }
-
-    header > nav {
         display: none;
     }
 
-    section#home {
-        height: 390px;  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    section#home > div.homeTextContainer {
-        position: static;
-        width: 90%;
-        margin-bottom: 50px;
-
-    }
-
-    section#home > div.homeTextContainer > h1 {
-        font-size: 1.5em;
-    }
-
-    section#home > div.homeTextContainer > p {
-        font-size: 0.9em;
-    }
-
-    section#sobre > div.sobreTextContainer {
-        width: 90%;
-        margin: 30px 0px 70px 0px;
-        padding: 20px 10px 60px 10px;
-        box-shadow: 10px 10px #4D4956;
-    }
-
-    section#sobre > div.sobreTextContainer > h2 {
-        font-size: 1.5em;
-    }
-
-    section#sobre > div.sobreTextContainer > hr {
-        margin-bottom: 0;
-    }
-
-    section#sobre > div.sobreTextContainer > p {
-        margin-top: 20px;
-        margin-bottom: 0px;
-        font-size: 0.9em;
-    }
-
-    section#sobre > div.sobreTextContainer > div.sobreImageContainer {
-        flex-direction: row;
-        gap: 20px;
-        left: 0;
-        right: 0;
-        bottom: -35px;
-    }
-
-    section#sobre > div.sobreTextContainer > div.sobreImageContainer > img {
-        height: 70px;
-    
-        transition: 0.3s;
-    }
-
-    section#sobre > div.sobreTextContainer > div.sobreImageContainer > img#CSS {
-        height: 70px;
-    }
-
-    section#sobre > div.sobreTextContainer > div.sobreImageContainer > img#JS {
-        height: 50px;
-        margin-top: 10px;
-    }
-
-    section#portifolio > h2 {
-        margin-top: 30px;
-        font-size: 1.5em;
-    }
-
-    section#portifolio > hr {
-        margin-bottom: 20px;
-    }
-
-    section#portifolio > div.cardContainer {
-        margin-bottom: 30px;
-    }
-
-    section#portifolio > div.cardContainer > a {
-        height: 70px;
-    }
-
-    section#servicos > h2 {
-        margin-top: 30px;
-        font-size: 1.5em;        
-    }
-
-    section#servicos > hr {
-        margin-bottom: 20px;
-    }
-
-    section#servicos > div.servContainer {
-        margin-bottom: 30px;
-    }
-
-    section#servicos > div.servContainer > div.servItem  {
-        height: 330px;
-        width: 300px;
-    }
-
-    section#servicos > div.servContainer > div.servItemCenter {
-        height: 330px;
-        width: 300px;
-        margin: 10px 0px;
-    }
-
-    section#servicos > div.servContainer > div.servItem > p {
-        font-size: 14px;
-    }
-
-    section#servicos > div.servContainer > div.servItem > p.preco {
-        margin-top: 10px;
-    }
-
-    section#servicos > div.servContainer > div.servItemCenter > p.preco {
-        margin-top: 10px;
-    }
-
-    footer > h2 {
-        font-size: 1.5em;
-    }
-
-    footer > a {
+    .mobile-header {
         height: 60px;
-        width: 300px;
-        padding: 0;
+
+        display: flex;
+        
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        background-color: #003B66;
+    }
+
+    .mobile-logo-container {
+        height: 100%;
 
         display: flex;
         align-items: center;
         justify-content: center;
-
-        text-align: center;
+        gap: 5px;
     }
 
-    footer > ul {
-        max-width: 90%;
+    .mobile-logo {
+        height: 55px;
+        width: 60px;
     }
 
-    footer > ul > li > a {
-        font-size: 0.7em;
+    .mobile-gamaral {
+        height: 25px;
     }
 
-    a.whatsappButton {
+    .mobile-nav-bar {
         display: none;
     }
 
+    #home {
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-text-container {
+        width: 90%;
+        position: absolute;
+        top: 80px;
+        left: auto;
+
+    }
+
+    .home-text-container h1 {
+        font-size: 1.5em;
+    }
+
+    .home-text-container p {
+        font-size: 1em;
+    }
+
+    .sobre-text-container {
+        width: 90%;
+    }
 }
