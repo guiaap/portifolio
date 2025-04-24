@@ -28,22 +28,28 @@
     </header>
 
     <div class="mobile-header">
-        <a href="index.html">
-            <div class="mobile-logo-container">
-                <img class="mobile-logo" src="imagens/fav.png" alt="G.AMARAL">
-                <img class="mobile-gamaral" src="imagens/gam.png" alt="">
-            </div>
-        </a>
         <nav class="mobile-nav-bar">
-            <ul class="mobile-nav-list">
-                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#home">Home</a></li>
-                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#sobre">Sobre Mim</a></li>
-                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#portifolio">Portifólio</a></li>
-                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#servicos">Serviços</a></li>
-                <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contato">Contato</a></li>
-            </ul>
+            <a href="index.html">
+                <div class="mobile-logo-container">
+                    <img class="mobile-logo" src="imagens/fav.png" alt="G.AMARAL">
+                    <img class="mobile-gamaral" src="imagens/gam.png" alt="">
+                </div>
+            </a>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="#home">Home</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="#sobre">Sobre Mim</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="#portifolio">Portifólio</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="#servicos">Serviços</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="#contato">Contato</a></li>
+        </ul>
     </div>
+    
 
         <main>
             <section id="home">
@@ -112,7 +118,7 @@
                 <h2>Serviços</h2>
                 <hr>
                 <div class="servicos-card-container">
-                    <div class="servicos-card">
+                    <div class="servicos-card" id="landingpage">
                         <hr>
                         <img src="imagens/coolcat.png" alt="Landing Page">
                         <h3>Landing Page</h3>
@@ -123,7 +129,7 @@
                         <img src="imagens/alien-spaceship-animate.svg" alt="">
                         <a class="botao-orcamento" href="">Faça um orçamento</a>
                     </div>
-                    <div class="servicos-card">
+                    <div class="servicos-card" id="institucional">
                         <hr>
                         <img src="imagens/formalcat.png" alt="Site Institucional">
                         <h3>Site Institucional</h3>
@@ -167,5 +173,6 @@
         <a href="https://wa.me/5549984103076" class="whatsapp-button" target="_blank">
             <img src="imagens/whatsapp.png" alt="WhatsApp">
         </a>
+        <script src="scripts/script.js"></script>
 </body>
 </html>

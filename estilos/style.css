@@ -518,7 +518,7 @@ header {
 .botao-orcamento {
     height: 60px;
     width: 280px;
-    margin: 40px 50px;
+    
 
     position: absolute;
     top: 230px;
@@ -708,15 +708,26 @@ footer {
     }
 
     .mobile-header {
-        height: 60px;
+        width: 100%;
+        padding: 1rem;
 
         display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
         
         position: sticky;
         top: 0;
         z-index: 1000;
 
         background-color: #003B66;
+    }
+
+    .mobile-nav-bar {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .mobile-logo-container {
@@ -729,17 +740,48 @@ footer {
     }
 
     .mobile-logo {
-        height: 55px;
-        width: 60px;
+        height: 40px;
+        width: 45px;
     }
 
     .mobile-gamaral {
-        height: 25px;
+        height: 20px;
     }
 
-    .mobile-nav-bar {
+    .mobile-nav-list {
+        width: 100%;
+
+        list-style: none;
         display: none;
+        flex-direction: column;
+        gap: 0.4rem;
     }
+
+    .mobile-nav-list.open {
+        display: flex;
+    }
+
+    .mobile-nav-item {
+        width: 100%;
+
+        border: 1px solid #CBE0EE;
+        padding: 0.3rem;
+    }
+
+    .mobile-nav-link {
+        height: 100%;
+        width: 100%;
+    
+        text-decoration: none;
+        color: #F2F2F2;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
 
     #home {
         height: 350px;
@@ -766,5 +808,123 @@ footer {
 
     .sobre-text-container {
         width: 90%;
+        margin-top: 40px;
+        margin-bottom: 110px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .sobre-text-container h2 {
+        font-size: 1.5em;
+    }
+
+    .sobre-text-container p {
+        font-size: 0.9em;
+    }
+
+    .astrocat {
+        height: 350px;
+        width: 350px;
+        top: 460px;
+        right: auto;
+        left: 0;
+    }
+
+    .planet {
+        height: 300px;
+        width: 300px;
+
+        top: -100px;
+        left: auto;
+        right: -30px;
+    }
+
+    .tech-container {
+        display: none;
+    }
+
+    #portifolio h2 {
+        margin-top: 80px;
+        font-size: 1.5em;
+    }
+
+    .portifolio-card-container {
+        margin-bottom: 50px;
+    }
+
+    .servicos-card-container {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    #servicos h2 {
+        font-size: 1.5em;
+    }
+
+    .call-to-action {
+        order: 3;
+    }
+
+    .servicos-card {
+        height: 380px;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .servicos-card img {
+        height: 80px;
+        width: 70px;
+    }
+
+    .servicos-card h3 {
+        font-size: 1.4em;
+    }
+
+    .servicos-card p {
+        font-size: 0.9em;
+    }
+
+    .call-to-action {
+        height: 240px;
+        width: 90%;
+    }
+
+    .call-to-action img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .botao-orcamento {
+        top: 180px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .footer-left-container {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-left-container img {
+        height: 250px;
+        width: 180px;
+    }
+
+    .footer-left-container p {
+        font-size: 1.5em;
+        width: 40%;
+    }
+
+    .footer-right-container {
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-right-container h2 {
+        margin-top: 0;
     }
 }
