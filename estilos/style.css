@@ -451,7 +451,7 @@ header {
 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 15px;
 }
@@ -514,9 +514,9 @@ header {
 
 .call-to-action img {
     height: 300px;
+    top: 10px;
 
     position: absolute;
-    top: 30px;
 }
 
 .botao-orcamento {
