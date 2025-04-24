@@ -88,8 +88,8 @@ header {
     height: 2px;
     left: 0;
     bottom: 0;
-    color: #FF1E1E;;
-    border-bottom: 3px solid #FF1E1E;;
+    color: #FFC107;
+    border-bottom: 3px solid #FFC107;
     transition: width 0.3s ease;
 }
 
@@ -116,7 +116,7 @@ header {
 }
 
 .nav-link:hover {
-    color: #FF1E1E;
+    color: #FFC107;
 }
 
 .mobile-header {
@@ -147,7 +147,7 @@ header {
     left: 130px;
 
     color: white;
-    text-shadow: 1px 1px 10px #cbe0ee9f;
+    text-shadow: 1px 1px 10px #ffc10777;
 }
 
 .home-text-container h1 {
@@ -197,7 +197,7 @@ header {
     width: 60px;
     margin-bottom: 30px;
     border: none;
-    background-color: #FF1E1E;
+    background-color: #FFC107;
 }
 
 .sobre-text-container p {
@@ -298,7 +298,7 @@ header {
     height: 4px;
     margin-bottom: 30px;
     border: none;
-    background-color: #FF1E1E;
+    background-color: #FFC107;
 }
 
 .portifolio-card-container {
@@ -437,7 +437,7 @@ header {
     width: 70px;
     margin-bottom: 30px;
     border: none;
-    background-color: #FF1E1E;
+    background-color: #FFC107;
 }
 
 .servicos-card-container {
@@ -600,7 +600,7 @@ footer {
     width: 70px;
     height: 4px;
     border: none;
-    background-color: #FF1E1E;
+    background-color: #FFC107;
 }
 
 .footer-whatsapp-button {
