@@ -224,6 +224,7 @@ header {
     width: 540px;
     
     position: absolute;
+    z-index: 50;
 
     top: -140px;
     left: 480px;
@@ -253,11 +254,12 @@ header {
 }
 
 .tech-container {
-    padding: 10px 50px;
+    padding: 10px 40px;
 
     position: absolute;
-    top: -80px;
-    left: 800px;
+    top: 430px;
+    left: 430px;
+    z-index: 50;
 
     display: flex;
     align-items: center;
@@ -277,7 +279,7 @@ header {
 }
 
 .tech-container img {
-    height: 90px; 
+    height: 80px; 
 
     transition: 0.3s;
 }
@@ -287,7 +289,7 @@ header {
 }
 
 #JS {
-    height: 70px;
+    height: 60px;
 }
 
 #portifolio h2 {
@@ -447,8 +449,7 @@ header {
 .servicos-card-container {
     width: 100%;
     margin-bottom: 50px;
-    padding: 5px;
-
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -573,7 +574,8 @@ footer {
 }
 
 .footer-left-container img {
-    height: 300px;
+    height: 200px;
+    width: 180px;
 }
 
 .footer-left-container p {
@@ -640,7 +642,6 @@ footer {
 
 .footer-right-containerr > ul > li > a > span {
     overflow-y: hidden;
-    margin-right: 10px;
 }
 
 .footer-right-container > h3 {
@@ -689,11 +690,13 @@ footer {
 }
 
 .whatsapp-button {
+    height: 50px;
+    width: 50px;
+    
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px;
-    height: 60px;
+    
     z-index: 1000;  
 
     overflow-y: hidden;
@@ -701,7 +704,7 @@ footer {
 
 .whatsapp-button img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 @media (min-width: 300px) and (max-width: 599px) {
@@ -835,16 +838,31 @@ footer {
     }
 
     .planet {
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
 
         top: -100px;
         left: auto;
-        right: -30px;
+        right: -20px;
     }
 
     .tech-container {
-        display: none;
+        padding: 5px 20px;
+        gap: 10px;
+
+        border-radius: 20px;
+
+        top: 535px;
+        left: 160px;
+    }
+
+    .tech-container img {
+        height: 45px;
+        width: 35px;
+    }
+
+    #JS {
+        height: 35px;
     }
 
     #portifolio {
@@ -856,6 +874,7 @@ footer {
 
         position: absolute;
         top: -200px;
+        right: 80px;
 
         z-index: 1;
 
@@ -886,9 +905,11 @@ footer {
         order: 3;
     }
 
+
+
     .servicos-card {
         height: 380px;
-        width: 90%;
+        width: 320px;
         gap: 30px;
     }
 
@@ -927,11 +948,13 @@ footer {
     .footer-left-container {
         height: auto;
         width: 100%;
+        order: 2;
+        margin-bottom: 30px;
     }
 
     .footer-left-container img {
-        height: 250px;
-        width: 180px;
+        height: 160px;
+        width: 140px;
     }
 
     .footer-left-container p {
@@ -942,6 +965,8 @@ footer {
     .footer-right-container {
         height: auto;
         width: 100%;
+        margin-top: 30px;
+        order: 1;
         align-items: center;
     }
 
