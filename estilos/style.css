@@ -144,7 +144,7 @@ header {
 
     position: absolute;
     top: 170px;
-    left: 130px;
+    left: 150px;
 
     color: white;
     text-shadow: 1px 1px 10px #ffc10777;
@@ -209,6 +209,10 @@ header {
 
 }
 
+.mobile-astrocat {
+    display: none;
+}
+
 .astrocat {
     height: 630px;
     width: 640px;
@@ -230,10 +234,6 @@ header {
     left: 480px;
 }
 
-.mobile-astrocat {
-    display: none;
-}
-
 #portifolio {
     width: 100%;
 
@@ -251,6 +251,10 @@ header {
     background-size: contain;
     background-position: center;
     
+}
+
+.mobile-tech-container {
+    display: none;
 }
 
 .tech-container {
@@ -707,7 +711,7 @@ footer {
     height: 100%;
 }
 
-@media (min-width: 300px) and (max-width: 599px) {
+@media (min-width: 320px) and (max-width: 575px) {
 
     header {
         display: none;
@@ -814,6 +818,7 @@ footer {
 
     #sobre {
         flex-direction: column;
+        position: relative;
         
     }
 
@@ -837,51 +842,71 @@ footer {
         display: none;
     }
 
+    .mobile-astrocat {
+        display: block;
+
+        height: 300px;
+        width: 300px;
+
+        position: absolute;
+        z-index: 1;
+
+        bottom: -130px;
+        left: -50px;
+    }
+
     .planet {
         height: 250px;
         width: 250px;
 
-        top: -100px;
+        top: -90px;
         left: auto;
         right: -20px;
     }
 
     .tech-container {
-        padding: 5px 20px;
-        gap: 10px;
-
-        border-radius: 20px;
-
-        top: 535px;
-        left: 160px;
+       display: none;
     }
 
-    .tech-container img {
-        height: 45px;
-        width: 35px;
+    .mobile-tech-container {
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+        z-index: 50;
+
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        background-image: linear-gradient(120deg, #ececec, #CBE0EE);
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.26); 
+
+        transition: 0.3s;
+    }
+
+    .mobile-tech-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418);
+    }
+
+    .mobile-tech-container img {
+        height: 40px;
+        width: 30px;
+
+        transition: 0.3s;
+    }
+
+    .mobile-tech-container img:hover {
+        transform: translateY(-5px);
     }
 
     #JS {
-        height: 35px;
+        height: 30px;
     }
-
-    #portifolio {
-        position: relative;
-    }
-
-    .mobile-astrocat {
-        display: block;
-
-        position: absolute;
-        top: -200px;
-        right: 80px;
-
-        z-index: 1;
-
-        height: 350px;
-        width: 350px;
-    }
-
 
     #portifolio h2 {
         margin-top: 80px;
@@ -904,8 +929,6 @@ footer {
     .call-to-action {
         order: 3;
     }
-
-
 
     .servicos-card {
         height: 380px;
