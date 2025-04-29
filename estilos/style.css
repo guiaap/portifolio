@@ -9,6 +9,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     scroll-behavior: smooth;
 }
@@ -17,12 +21,12 @@ body {
     max-width: 2000px;
     width: 100%;
     margin: auto;
-    background-color: var(--gray);
+    background-color: #F2F2F2;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.326);
 }
 
 header {
-    height: 60px;
+    height: 6rem;
 
     position: sticky;
     top: 0;
@@ -36,27 +40,18 @@ header {
 }
 
 .logo-container {
-    height: 100%;
-    width: 300px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    height: 5rem;
+    width: 18rem;
 }
 
 .logo {
-    height: 55px;
-    width: 60px;
-}
-
-.gamaral {
-    height: 25px;
+    height: 100%;
+    width: 100%;
 }
 
 .nav-bar {
     height: 100%;
-    width: 700px;
+    width: 70rem;
 }
 
 .nav-list {
@@ -68,7 +63,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .nav-item {
@@ -109,7 +104,7 @@ header {
 
     text-decoration: none;
     color: #F2F2F2;
-    font-size: 1em;
+    font-size: 1.5rem;
     font-weight: 500;
 
     transition: 0.3s;
@@ -124,7 +119,7 @@ header {
 }
 
 #home {
-    height: 550px;
+    height: 55rem;
     width: 100%;
 
     position: relative;
@@ -139,24 +134,24 @@ header {
     background-attachment: fixed;
 }
 
-.home-text-container {
-    width: 900px;
+.home-content {
+    width: 90rem;
 
     position: absolute;
-    top: 170px;
-    left: 150px;
+    top: 17rem;
+    left: 20rem;
 
     color: white;
-    text-shadow: 1px 1px 10px #ffc10777;
+    text-shadow: 2px 2px 10px #ffc10777;
 }
 
-.home-text-container h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
+.home-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
-.home-text-container p {
-    font-size: 1.3em;
+.home-content p {
+    font-size: 2rem;
     text-align: justify;
 }
 
@@ -166,13 +161,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
     background-color: #F2F2F2;
 }
 
-.sobre-text-container {
-    width: 900px;
-    margin: 60px 0px 120px;
-    padding: 0px 90px;
+.sobre-text {
+    width: 90rem;
+    margin: 6rem 0 12rem 0;
+    padding: 0px 9rem;
 
     display: flex;
     flex-direction: column;
@@ -183,29 +179,29 @@ header {
 
     border-left: 1px solid #003B66;
     border-right: 1px solid #003B66;
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 
-.sobre-text-container h2 {
-    margin-bottom: 5px;
-    font-size: 1.9em;
+.sobre-text h2 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
     color: #003B66;
 }
 
-.sobre-text-container hr {
-    height: 4px;
-    width: 60px;
-    margin-bottom: 30px;
+.sobre-text hr {
+    height: 0.4rem;
+    width: 6rem;
+    margin-bottom: 3rem;
     border: none;
     background-color: #FFC107;
 }
 
-.sobre-text-container p {
-    margin-bottom: 20px;
+.sobre-text p {
+    margin-bottom: 2rem;
     z-index: 1;
 
     text-align: justify;
-    font-size: 1.1em;
+    font-size: 1.7rem;
 
 }
 
@@ -214,24 +210,24 @@ header {
 }
 
 .astrocat {
-    height: 630px;
-    width: 640px;
+    height: 63rem;
+    width: 64rem;
     z-index: 1;
 
     position: absolute;
-    top: 110px;
-    right: 570px;    
+    top: 11rem;
+    right: 57rem;    
 }
 
 .planet {
-    height: 540px;
-    width: 540px;
+    height: 54rem;
+    width: 54rem;
     
     position: absolute;
     z-index: 50;
 
-    top: -140px;
-    left: 480px;
+    top: -14rem;
+    left: 48rem;
 }
 
 #portifolio {
@@ -250,7 +246,6 @@ header {
     background-image: url(../imagens/space-pattern-02.png);
     background-size: contain;
     background-position: center;
-    
 }
 
 .mobile-tech-container {
@@ -258,74 +253,75 @@ header {
 }
 
 .tech-container {
-    padding: 10px 40px;
+    padding: 1rem 4rem;
 
     position: absolute;
-    top: 430px;
-    left: 430px;
+    top: 43rem;
+    left: 43rem;
     z-index: 50;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
 
     background-image: linear-gradient(120deg, #ececec, #CBE0EE);
     border-radius: 30px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.26); 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26); 
     
     transition: 0.3s;
 }
 
 .tech-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418); 
+    transform: translateY(-0.5rem);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.418); 
 }
 
 .tech-container img {
-    height: 80px; 
+    height: 8rem; 
+    width: 5.8rem;
 
     transition: 0.3s;
 }
 
 .tech-container img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5rem);
 }
 
 #JS {
-    height: 60px;
+    height: 6rem;
+    width: 6rem;
 }
 
 #portifolio h2 {
-    margin-top: 80px;
-    margin-bottom: 5px;
-    font-size: 2em;
+    margin: 8rem 0 0.5rem;
+    font-size: 3rem;
     color: #F2F2F2;
 }
 
 #portifolio hr {
-    width: 70px;
-    height: 4px;
-    margin-bottom: 30px;
+    width: 7rem;
+    height: 0.4rem;
+    margin-bottom: 3rem;
     border: none;
     background-color: #FFC107;
 }
 
 .portifolio-card-container {
     width: 100%;
-    margin-bottom: 100px;
-    padding-top: 5px;
+    margin-bottom: 10rem;
+    padding-top: 0.5rem;
     
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 3rem;
 }
 
 .portifolio-card {
-    height: 280px;
-    width: 300px;
+    height: 28rem;
+    width: 30rem;
 
     position: relative;
 
@@ -340,7 +336,7 @@ header {
 }
 
 .portifolio-card-image-container {
-    height: 170px;
+    height: 17rem;
     width: 100%;
     position: relative;
     
@@ -374,7 +370,7 @@ header {
     text-decoration: none;
     background-color: #3131336a;
 
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     color: #FFF;
 
@@ -386,10 +382,10 @@ header {
 }
 
 .portifolio-card h3 {
-    padding: 10px;
+    padding: 1rem;
 
     position: absolute;
-    top: 150px;
+    top: 15rem;
     z-index: 10;
 
     background-color: #CBE0EE;
@@ -397,14 +393,14 @@ header {
 
     color: #003B66;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1.3rem;
 }
 
 .portifolio-card p {
-    padding: 5px;
-    margin-top: 20px;
+    padding: 0.5rem;
+    margin-top: 2rem;
     color: #FFF;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: justify;
 }
 
@@ -436,78 +432,78 @@ header {
 }
 
 #servicos h2 {
-    margin-top: 50px;
-    margin-bottom: 5px;
-    font-size: 2em;
+    margin: 5rem 0 0.5rem 0;
+    font-size: 3rem;
     color: #003B66;
 }
 
 #servicos > hr {
-    height: 4px;
-    width: 70px;
-    margin-bottom: 30px;
+    height: 0.4rem;
+    width: 7rem;
+    margin-bottom: 3rem;
     border: none;
     background-color: #FFC107;
 }
 
 .servicos-card-container {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
     
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .servicos-card {
-    height: 420px;
-    width: 340px;
+    height: 42rem;
+    width: 34rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 3rem;
 
 
     border: 1px solid #CCC;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
     border-radius: 10px;
 
     transition: 0.3s;
 }
 
 .servicos-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5rem);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
 }
 
 .servicos-card hr {
-    height: 1px;
+    height: 0.1rem;
     width: 90%;
     background-color: #CCC;
     border: none;
 }
 
 .servicos-card img {
-    height: 100px;
+    height: 10rem;
+    width: 8rem;
 }
 
 .servicos-card h3 {
-    font-size: 1.5em;
+    font-size: 2rem;
 }
 
 .servicos-card p {
     width: 80%;
-    font-size: 1em;
-    text-align: left;
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 .call-to-action {
-    height: 400px;
-    width: 340px;
+    height: 40rem;
+    width: 34rem;
 
     position: relative;
 
@@ -518,18 +514,18 @@ header {
 }
 
 .call-to-action img {
-    height: 300px;
-    top: 10px;
+    height: 30rem;
+    top: 1rem;
 
     position: absolute;
 }
 
 .botao-orcamento {
-    height: 60px;
-    width: 280px;
+    height: 6rem;
+    width: 28rem;
     
     position: absolute;
-    top: 270px;
+    top: 27rem;
     z-index: 50;
 
     display: flex;
@@ -538,7 +534,8 @@ header {
 
     text-decoration: none;
     color: #F2F2F2;
-    font-size: 1.1em;
+    font-size: 1.5rem;
+    font-weight: 600;
 
     background-color: #003B66;
     border: 1px solid #F2F2F2;
@@ -560,7 +557,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 5rem;
 
     background-color: #003B66;
     background-image: url(../imagens/space-pattern-01.png);
@@ -570,7 +567,7 @@ footer {
 
 .footer-left-container {
     height: 100%;
-    width: 400px;
+    width: 40rem;
 
     display: flex;
     align-items: center;
@@ -578,12 +575,12 @@ footer {
 }
 
 .footer-left-container img {
-    height: 200px;
-    width: 180px;
+    height: 20rem;
+    width: 18rem;
 }
 
 .footer-left-container p {
-    font-size: 2em;
+    font-size: 3rem;
     color: #F2F2F2;
     font-weight: 600;
 }
@@ -598,28 +595,29 @@ footer {
 }
 
 .footer-right-container h2 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 2em;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
 
     color: #F2F2F2;    
 }
 
 .footer-right-container hr {
-    width: 70px;
-    height: 4px;
+    width: 7rem;
+    height: 0.4rem;
     border: none;
     background-color: #FFC107;
 }
 
 .footer-whatsapp-button {
-    margin: 20px 0px;
-    padding: 20px;
+    margin: 2rem 0;
+    padding: 2rem;
     border-radius: 20px;
     border: 1px solid #003B66;
     background-color: #0e750a;
     color: #FFF;
     text-decoration: none;
+    font-size: 1.5rem;
 
     transition: 0.3s;
 }
@@ -642,6 +640,7 @@ footer {
 
     text-decoration: none;
     color: #FFF;
+    font-size: 1.5rem;
 }
 
 .footer-right-containerr > ul > li > a > span {
@@ -650,11 +649,12 @@ footer {
 
 .footer-right-container > h3 {
     color: #FFF;
-    margin: 20px 0px 10px 0px;
+    margin: 2rem 0px 1rem 0px;
+    font-size: 1.5rem;
 }
 
 .social-media-container {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 
     display: flex;
     align-items: center;
@@ -662,8 +662,8 @@ footer {
 }
 
 .instagram {
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
 
     background-image: url(../imagens/instagram.png);
     background-size: cover;
@@ -672,10 +672,10 @@ footer {
 }
 
 .facebook {
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
 
-    margin: 0px 10px;
+    margin: 0 1rem;
 
     background-image: url(../imagens/facebook.png);
     background-size: cover;
@@ -684,8 +684,8 @@ footer {
 }
 
 .linkedin {
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
 
     background-image: url(../imagens/linkedin.png);
     background-size: cover;
@@ -694,12 +694,12 @@ footer {
 }
 
 .whatsapp-button {
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
     
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 2rem;
     
     z-index: 1000;  
 
@@ -712,6 +712,10 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+
+    html {
+        font-size: 50%;
+    }
 
     header {
         display: none;
@@ -794,47 +798,26 @@ footer {
 
 
     #home {
-        height: 350px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .home-text-container {
+    .home-content {
         width: 90%;
         position: absolute;
-        top: 80px;
+        top: 12rem;
         left: auto;
-    }
-
-    .home-text-container h1 {
-        font-size: 1.8em;
-    }
-
-    .home-text-container p {
-        font-size: 1em;
     }
 
     #sobre {
         flex-direction: column;
         position: relative;
-        
     }
 
-    .sobre-text-container {
+    .sobre-text {
         width: 90%;
-        margin-top: 40px;
-        margin-bottom: 120px;
-        padding: 10px 20px;
-        border-radius: 10px;
-    }
-
-    .sobre-text-container h2 {
-        font-size: 1.5em;
-    }
-
-    .sobre-text-container p {
-        font-size: 0.9em;
+        padding: 2rem;
     }
 
     .astrocat {
@@ -844,8 +827,8 @@ footer {
     .mobile-astrocat {
         display: block;
 
-        height: 300px;
-        width: 300px;
+        height: 37.5rem;
+        width: 37.5rem;
 
         position: absolute;
         z-index: 1;
