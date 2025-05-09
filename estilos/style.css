@@ -829,7 +829,7 @@ footer {
     }
 
     .home-content h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .home-content p {
@@ -951,7 +951,7 @@ footer {
 
     .servicos-card-container {
         flex-direction: column;
-        margin-bottom: 30px;
+        margin-bottom: 1rem;
     }
 
     #servicos h2 {
@@ -980,7 +980,7 @@ footer {
     }
 
     .servicos-card p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .call-to-action {
